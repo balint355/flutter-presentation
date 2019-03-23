@@ -24,7 +24,7 @@
 - De: minden `Widget` *immutable*
 - Kétféle `Widget`:
     - Stateless
-    - Stateful: tartozik hozzá egy `State` objektum, akkor hasznos, ha változik a tartalma pl. felhasználó csinálhat vele valamit
+    - Stateful
 - Minden `Widget` minden frame-ben újra kirajzolódik, új példány jön létre (meghívódik a `Widget` `build` függvénye)
 
 +++
@@ -37,7 +37,7 @@
 
 +++
 
-### Stateful Widget
+## Stateful Widget
 
 - Tartozik hozzá egy `State` objektum
 - A tartalma változik, pl. felhasználó valamit csinálhat vele
