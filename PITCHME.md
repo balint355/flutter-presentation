@@ -49,16 +49,49 @@
 
 ---
 
-## 'Hello World!' Dartul
+## Hello world!
 
-```
+```dart
 void main() {
   print('Hello world!');
 }
 ```
 
-Rövidebben, egysoros függvényeknél:
+Rövidebben, egysoros függvényeknél, vagy ha csak egy `return`-ből áll:
 
 ```dart
 void main() => print('Hello world!');
 ```
+
+---
+
+## Dart nyelv jellemzői
+
+- Magas szintű
+- Erősen típusos
+- Objektumorientált (is)
+
+---
+
+## Változók
+
+- Beépített típusok: `int`, `String`, `List`, `bool`...
+- Minden, ami egy változóban lehet, objektum
+- Minden változó alapértéke `null` (még a számoké is, mivel a számok is objektumok)
+- Típus annotáció opcionális:
+
+```dart
+var number = 42;
+```
+
+```dart
+int number = 42;
+```
+
+- Lokális változóknál általában `var`, egyébként jelöljük a típust
+
+---
+
+## Függvények
+
+- A függvények is objektumok, típusuk `Function`
