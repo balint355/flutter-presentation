@@ -21,10 +21,10 @@
 ## Pár szó a Widget-ekről
 
 - Kb. mint egy androidos `View`
-- De: minden `Widget` *immutable*
+- De: minden `Widget` _immutable_
 - Kétféle `Widget`:
-    - Stateless
-    - Stateful
+  - Stateless
+  - Stateful
 - Minden `Widget` minden frame-ben újra kirajzolódik, új példány jön létre (meghívódik a `Widget` `build` függvénye)
 
 +++
@@ -42,3 +42,23 @@
 - Tartozik hozzá egy `State` objektum
 - A tartalma változik, pl. felhasználó valamit csinálhat vele
 - A `State` objektum tárolja a hozzá tartozó adatokat, amik változnak
+
+---
+
+# Dart bevezető
+
+---
+
+## 'Hello World!' Dartul
+
+```
+void main() {
+  print('Hello world!');
+}
+```
+
+Rövidebben, egysoros függvényeknél:
+
+```dart
+void main() => print('Hello world!');
+```
