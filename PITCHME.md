@@ -12,7 +12,8 @@
 
 ### Flutter alapok
 
-- Dart programozási nyelv
+- Google fejleszti
+- Dart programozási nyelvet használja (szintén Google)
 - Az alkalmazás felülete `Widget`-ekből épül fel
 - Hot reload: az alkalmazás teljes újrafordítása nélkül tesztelhetjük a változtatásokat
 
@@ -197,7 +198,9 @@ class Point {
 }
 ```
 
-Rövidebben:
+---
+
+### Konstruktor egyszerűbben
 
 ```dart
 class Point {
@@ -207,3 +210,11 @@ class Point {
   Point(this.x, this.y);
 }
 ```
+
+---
+
+### Hasznos linkek
+
+- <https://flutter.dev>
+- <https://www.dartlang.org/>
+- <https://www.google.com/> ㋡ ☺ ☻ シ ッ ツ
