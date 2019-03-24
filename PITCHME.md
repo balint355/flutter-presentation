@@ -2,7 +2,7 @@
 
 ---
 
-## Mi is az a Flutter?
+### Mi is az a Flutter?
 
 - Cross platform alkalmazás fejlesztő keretrendszer
 - Gyors fejlesztés Androidra és iOS-re
@@ -10,7 +10,7 @@
 
 ---
 
-## Flutter alapok
+### Flutter alapok
 
 - Dart programozási nyelv
 - Az alkalmazás felülete `Widget`-ekből épül fel
@@ -18,7 +18,7 @@
 
 ---
 
-## Pár szó a Widget-ekről
+### Pár szó a Widget-ekről
 
 - Kb. mint egy androidos `View`
 - De: minden `Widget` _immutable_
@@ -29,7 +29,7 @@
 
 +++
 
-## Stateless Widget
+### Stateless Widget
 
 - Nincs állapota
 - Nem akarjuk változtatni
@@ -37,7 +37,7 @@
 
 +++
 
-## Stateful Widget
+### Stateful Widget
 
 - Tartozik hozzá egy `State` objektum
 - A tartalma változik, pl. felhasználó valamit csinálhat vele
@@ -45,11 +45,11 @@
 
 ---
 
-# Dart bevezető
+## Dart bevezető
 
 ---
 
-## Hello world!
+### Hello world!
 
 ```dart
 void main() {
@@ -59,7 +59,7 @@ void main() {
 
 ---
 
-## Dart nyelv jellemzői
+### Dart nyelv jellemzői
 
 - Magas szintű
 - Erősen típusos
@@ -67,11 +67,11 @@ void main() {
 
 ---
 
-## Változók
+### Változók
 
 - Beépített típusok: `int`, `double`, `String`, `List`, `bool`...
 - Minden, ami egy változóban lehet, objektum
-- Minden változó alapértéke `null` (még a számoké is, mivel a számok is objektumok)
+- Minden változó alapértéke `null`
 - Típus annotáció opcionális:
 
 ```dart
@@ -86,7 +86,7 @@ int number = 42;
 
 ---
 
-## Függvények
+### Függvények
 
 - A függvények is objektumok, típusuk `Function`
 - Más nyelvekhez hasonlók:
@@ -102,3 +102,4 @@ bool even(int a) {
 ```dart
 bool even(int a) => a % 2 == 0;
 ```
+
