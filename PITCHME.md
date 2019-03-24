@@ -178,3 +178,32 @@ void main() {
   print('X: ${p.x}, Y: ${p.y});
 }
 ```
+
++++
+
+### Konstruktorok
+
+- Ha nem írunk konstruktort, kapunk egy alapértelmezettet
+
+```dart
+class Point {
+  num x;
+  num y;
+
+  Point(num x, num y) {
+    this.x = x;
+    this.y = y;
+  }
+}
+```
+
+Rövidebben:
+
+```dart
+class Point {
+  num x;
+  num y;
+
+  Point(this.x, this.y);
+}
+```
