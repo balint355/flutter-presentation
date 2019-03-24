@@ -156,3 +156,25 @@ void main() {
   });
 }
 ```
+
+---
+
+### Osztályok
+
+- Minden objektum egy osztály példánya
+- Minden osztály a `Object`-ből származik
+- Metódusok és tagváltozók
+
+```dart
+class Point {
+  num x;
+  num y;
+}
+
+void main() {
+  var p = Point();
+  p.x = 5;
+  p.y = 6.2;
+  print('X: ${p.x}, Y: ${p.y});
+}
+```
