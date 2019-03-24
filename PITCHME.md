@@ -86,10 +86,9 @@ int number = 42;
 
 ### Függvények
 
-@ul
-
 - A függvények is objektumok, típusuk `Function`
-- Más nyelvekhez hasonlók:
+- Más nyelvekhez hasonlók
+- Lehetnek opcionális paraméterek
 
 ```dart
 bool isEven(int a) {
@@ -97,21 +96,18 @@ bool isEven(int a) {
 }
 ```
 
-- Arrow syntax, ha csak egy `return` van a függvényben
+Arrow syntax, ha csak egy `return` van a függvényben
 
 ```dart
 bool isEven(int a) => a % 2 == 0;
 ```
 
-- Lehetnek opcionális paraméterek
-
-@ulend
-
 +++
 
 ### Optional named parameters
 
-- A paramétereket a nevükkel adhatjuk meg a függvény hívásakor
+- Opcionális paraméterek, a nevükkel adhatjuk meg őket a függvény hívásakor
+- Lehet alapértelmezett értékük
 
 ```dart
 String gyumolcsFa({String gyumolcs = 'alma'}) {
@@ -124,5 +120,35 @@ void main() {
 
   print(fa);        // almafa
   print(kortefa);   // Körtefa
+}
+```
+
+### Optional positional parameters
+
+- Csak a paraméterlista végén lehetnek
+- Lehet alapértelmezett értékük
+
+```dart
+double add(num a, num b, [num c, num d]) {
+  return c == null ? a + b : d == null ? a + b + c : a + b + c + d;
+}
+
+void main() {
+  print(add(2, 4.5));
+  print(add(2, 4.5, 3));
+  print(add(2, 4.5, 3, -5));
+}
+```
+
+### Névtelen függvények
+
+- *Anonymous function, lambda, closure*
+
+```dart
+void main() {
+  var list = ['pen', 'pineapple'];
+  list.forEach((item) {
+    print('I have a $item');
+  });
 }
 ```
