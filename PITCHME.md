@@ -123,6 +123,8 @@ void main() {
 }
 ```
 
++++
+
 ### Optional positional parameters
 
 - Csak a paraméterlista végén lehetnek
@@ -140,9 +142,11 @@ void main() {
 }
 ```
 
+---
+
 ### Névtelen függvények
 
-- *Anonymous function, lambda, closure*
+- _Anonymous function, lambda, closure_
 
 ```dart
 void main() {
