@@ -217,4 +217,4 @@ class Point {
 
 - <https://flutter.dev>
 - <https://www.dartlang.org/>
-- <https://www.google.com/> ㋡ ☺ ☻ シ ッ ツ
+- <https://www.google.com/> ☺
