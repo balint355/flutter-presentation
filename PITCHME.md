@@ -86,6 +86,8 @@ int number = 42;
 
 ### Függvények
 
+@ul
+
 - A függvények is objektumok, típusuk `Function`
 - Más nyelvekhez hasonlók:
 
@@ -95,7 +97,7 @@ bool isEven(int a) {
 }
 ```
 
-- Ha csak egy `return` van a függvényben:
+- Arrow syntax, ha csak egy `return` van a függvényben
 
 ```dart
 bool isEven(int a) => a % 2 == 0;
@@ -103,11 +105,11 @@ bool isEven(int a) => a % 2 == 0;
 
 - Lehetnek opcionális paraméterek
 
+@ulend
+
 +++
 
-### Opcionális névvel rendelkező paraméterek
-
-### (Optional named parameters)
+### Optional named parameters
 
 - A paramétereket a nevükkel adhatjuk meg a függvény hívásakor
 
