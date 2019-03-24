@@ -57,12 +57,6 @@ void main() {
 }
 ```
 
-Rövidebben, egysoros függvényeknél, vagy ha csak egy `return`-ből áll:
-
-```dart
-void main() => print('Hello world!');
-```
-
 ---
 
 ## Dart nyelv jellemzői
@@ -75,7 +69,7 @@ void main() => print('Hello world!');
 
 ## Változók
 
-- Beépített típusok: `int`, `String`, `List`, `bool`...
+- Beépített típusok: `int`, `double`, `String`, `List`, `bool`...
 - Minden, ami egy változóban lehet, objektum
 - Minden változó alapértéke `null` (még a számoké is, mivel a számok is objektumok)
 - Típus annotáció opcionális:
@@ -88,10 +82,23 @@ var number = 42;
 int number = 42;
 ```
 
-- Lokális változóknál általában `var`, egyébként jelöljük a típust
+- Lokális változóknál általában `var`, egyébként szokás kiírni a típust
 
 ---
 
 ## Függvények
 
 - A függvények is objektumok, típusuk `Function`
+- Más nyelvekhez hasonlók:
+
+```dart
+bool even(int a) {
+  return a % 2 == 0;
+}
+```
+
+- Ha csak egy `return` van a függvényben:
+
+```dart
+bool even(int a) => a % 2 == 0;
+```
