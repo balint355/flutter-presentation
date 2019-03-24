@@ -15,6 +15,7 @@
 - Google fejleszti
 - Dart programozási nyelvet használja (szintén Google)
 - Az alkalmazás felülete `Widget`-ekből épül fel
+- `Material` és `Cupertino` stílusú `Widget`-ek
 - Hot reload: az alkalmazás teljes újrafordítása nélkül tesztelhetjük a változtatásokat
 
 ---
@@ -176,7 +177,7 @@ void main() {
   var p = Point();
   p.x = 5;
   p.y = 6.2;
-  print('X: ${p.x}, Y: ${p.y});
+  print('X: ${p.x}, Y: ${p.y}');
 }
 ```
 
