@@ -72,7 +72,7 @@ void main() {
 - Beépített típusok: `int`, `double`, `String`, `List`, `bool`...
 - Minden, ami egy változóban lehet, objektum
 - Minden változó alapértéke `null`
-- Típus annotáció opcionális:
+- Típus annotáció opcionális
 
 ```dart
 var number = 42;
@@ -82,8 +82,6 @@ var number = 42;
 int number = 42;
 ```
 
-- Lokális változóknál általában `var`, egyébként szokás kiírni a típust
-
 ---
 
 ### Függvények
@@ -92,7 +90,7 @@ int number = 42;
 - Más nyelvekhez hasonlók:
 
 ```dart
-bool even(int a) {
+bool isEven(int a) {
   return a % 2 == 0;
 }
 ```
@@ -100,6 +98,29 @@ bool even(int a) {
 - Ha csak egy `return` van a függvényben:
 
 ```dart
-bool even(int a) => a % 2 == 0;
+bool isEven(int a) => a % 2 == 0;
 ```
 
+- Lehetnek opcionális paraméterek
+
++++
+
+### Opcionális névvel rendelkező paraméterek
+
+### (Optional named parameters)
+
+- A paramétereket a nevükkel adhatjuk meg a függvény hívásakor
+
+```dart
+String gyumolcsFa({String gyumolcs = 'alma'}) {
+  return gyumolcs + 'fa';
+}
+
+void main() {
+  String fa = gyumolcsFa();
+  String kortefa = gyumolcsFa(gyumolcs: 'Körte');
+
+  print(fa);        // almafa
+  print(kortefa);   // Körtefa
+}
+```
