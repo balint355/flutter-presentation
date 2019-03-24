@@ -98,7 +98,7 @@ bool isEven(int a) {
 }
 ```
 
-Arrow syntax, ha csak egy `return` van a függvényben
+Arrow syntax, ha csak egy `return` van a függvényben:
 
 ```dart
 bool isEven(int a) => a % 2 == 0;
