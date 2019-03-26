@@ -4,7 +4,7 @@
 
 ### Mi is az a Flutter?
 
-- Cross platform alkalmazás fejlesztő keretrendszer
+- Google által fejlesztett cross platform alkalmazás fejlesztő keretrendszer
 - Gyors fejlesztés Androidra és iOS-re
 - Natívhoz közeli teljesítmény
 
@@ -12,7 +12,6 @@
 
 ### Flutter alapok
 
-- Google fejleszti
 - Dart programozási nyelvet használja (szintén Google)
 - Az alkalmazás felülete `Widget`-ekből épül fel
 - `Material` és `Cupertino` stílusú `Widget`-ek
@@ -164,7 +163,7 @@ void main() {
 ### Osztályok
 
 - Minden objektum egy osztály példánya
-- Minden osztály a `Object`-ből származik
+- Minden osztály az `Object`-ből származik
 - Metódusok és tagváltozók
 
 ```dart
@@ -181,7 +180,7 @@ void main() {
 }
 ```
 
-+++
+---
 
 ### Konstruktorok
 
@@ -199,7 +198,7 @@ class Point {
 }
 ```
 
----
++++
 
 ### Konstruktor egyszerűbben
 
