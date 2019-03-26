@@ -24,10 +24,10 @@
 
 - Kb. mint egy androidos `View`
 - De: minden `Widget` _immutable_
+- Minden `Widget` minden frame-ben újra kirajzolódik, új példány jön létre (meghívódik a `Widget` `build` függvénye)
 - Kétféle `Widget`:
   - Stateless
   - Stateful
-- Minden `Widget` minden frame-ben újra kirajzolódik, új példány jön létre (meghívódik a `Widget` `build` függvénye)
 
 +++
 
