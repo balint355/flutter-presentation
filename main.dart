@@ -24,15 +24,20 @@ class TodoList extends StatefulWidget {
 class TodoListState extends State<TodoList> {
   List<String> _todoItems = [];
   List<bool> _todoCheckedStates = [];
-  int index = 0;
 
-  void _addTodoItem(String todo) {
-    if (todo.length > 0)
-      setState(() {
-        _todoItems.add(todo);
-        _todoCheckedStates.add(false);
-        index++;
-      });
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Todo Demo'),
+      ),
+      body: _buildTodoList(),
+      floatingActionButton: FloatingActionButton(
+        onPressed: _addTodoScreen,
+        tooltip: 'Add task',
+        child: Icon(Icons.add),
+      ),
+    );
   }
 
   Widget _buildTodoList() {
@@ -75,18 +80,11 @@ class TodoListState extends State<TodoList> {
     }));
   }
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Todo Demo'),
-      ),
-      body: _buildTodoList(),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _addTodoScreen,
-        tooltip: 'Add task',
-        child: Icon(Icons.add),
-      ),
-    );
+  void _addTodoItem(String todo) {
+    if (todo.length > 0)
+      setState(() {
+        _todoItems.add(todo);
+        _todoCheckedStates.add(false);
+      });
   }
 }
